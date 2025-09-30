@@ -295,7 +295,8 @@
 </section>
 <!-- End teaser image -->
 
-<!-- Overview blurb -->
+<!-- Overview blurb (More verbose)-->
+<!--
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
@@ -311,6 +312,33 @@
             The Jackal UGV was teleoperated by a human across the trajectories using a wireless DualShock controller constrained to discrete actions: 0.25 m forward/backward and 15° left/right rotations. After each action, a timestamp was logged, images were captured, and the Pixel 3a was queried for GPS, compass orientation, and Wi‑Fi FTM data. Each trajectory directory contains RGB, raw depth, and normalized depth images, along with JSON files: one recording router MAC addresses and GPS locations, and another storing a timestamp‑ordered dictionary of controller actions, image paths, FTM/RSSI values, GPS, and compass direction. To capture complementary perspectives, every path was traversed in both directions, covering most of the campus sidewalk network, including academic buildings, statues, and open fields, with forward passes labeled as 1 and backward passes as 2 (e.g., <code>path_6_1</code>, <code>path_6_2</code>). In total, the dataset contains 35 trajectories spanning 19 unique paths (25 originally proposed), with distances ranging from 87 m to 253 m (170 m on average, stdev 46 m, median 178 m). Altogether, this amounts to 26,570 synchronized UNIX‑timestamped images and sensor readings, or 228 minutes (≈3.8 hours) of footage, with individual trajectories lasting between 3 and 16 minutes (mean 6.5, stdev 2.9, median 5.6). A PyQt‑based GUI viewer (shown below) was developed to make browsing and inspecting the dataset straightforward.
           </p>
 
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+<!-- End overview blurb -->
+
+<!-- Overview blurb (Less verbose)-->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Overview</h2>
+        <div class="content has-text-justified">
+
+          <p>
+            Busch‑6KM is a visual navigation dataset collected on Busch Campus, Rutgers University (New Jersey, United States) during the Summer and Fall of 2024 and 2025. The dataset is intended to support research in visual navigation and visual place recognition, particularly approaches that fuse Wi‑Fi sensing with visual data.
+          </p>
+
+          <p>
+            The campus was divided into 25 planned trajectories spanning sidewalks and roads. A Clearpath Jackal UGV was teleoperated by a human along each trajectory in both directions, producing forward and reverse passes that capture complementary perspectives. During traversal, the robot recorded timestamps, synchronized RGB and depth images, compass orientation, GPS, and Wi‑Fi Received Signal Strength Indicator (RSSI) and Fine Timing Measurements (FTM), covering diverse campus landmarks such as academic buildings and statues.
+          </p>
+
+          <p>
+            In total, Busch‑6KM contains 35 traversals across 19 unique trajectories (out of the 25 originally proposed), with lengths ranging from 87–253 m (170 m on average). Altogether, this amounts to 26,570 images and sensor data, or about 228 minutes of data, with individual trajectories lasting between 3 and 16 minutes. A PyQt‑based GUI viewer (shown below) was developed to make browsing and inspecting the dataset straightforward.
+          </p>
         </div>
       </div>
     </div>
@@ -597,7 +625,7 @@ if (items.length > 0) show(0)
 <!--End paper poster -->
 
 <!-- Equipment and Data Collection -->
-<section class="section">
+<section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-left">
       <div class="column is-four-fifths">
@@ -691,9 +719,9 @@ paths/
       </div>
       <pre id="bibtex-code"><code>@article{YourPaperKey2026,
   title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
+  author={Ryan Meegan, Adam D'Souza, Kristin Dana},
+  journal={CVPR},
+  year={2026},
   url={https://your-domain.com/your-project-page}
 }</code></pre>
     </div>
