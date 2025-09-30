@@ -492,7 +492,7 @@ function makeCaption(filename) {
   if (!match) return filename
   const pathNum = match[1]
   const dir = match[2] === "1" ? "forward" : "reverse"
-  return `Path ${pathNum} in the ${dir} direction visualized in the dataset viewer (left: Google Maps aeiral view with marked routers, bottom right: Jackal UGV camera feed, top right: sensor data)`
+  return `Path ${pathNum} in the ${dir} direction visualized in the dataset viewer (left: Google Maps aeiral view with marked routers, bottom right: Jackal UGV camera feed, top right: timestamps, actions, and sensor data)`
 }
 
 const root = document.getElementById("results-carousel")
