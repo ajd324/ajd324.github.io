@@ -172,7 +172,6 @@
 </head>
 <body>
 
-
   <!-- Scroll to Top Button -->
   <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
     <i class="fas fa-chevron-up"></i>
@@ -296,7 +295,6 @@
 </section>
 <!-- End teaser image -->
 
-
 <!-- Overview blurb -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
@@ -356,7 +354,6 @@
 </section>
 -->
 <!-- End image carousel -->
-
 
 <!-- Youtube video -->
  <!-- 
@@ -467,7 +464,7 @@ function makeCaption(filename) {
   if (!match) return filename
   const pathNum = match[1]
   const dir = match[2] === "1" ? "forward" : "reverse"
-  return `Path ${pathNum} in the ${dir} direction visualized in the dataset viewer`
+  return `Path ${pathNum} in the ${dir} direction visualized in the dataset viewer (left: Google Maps aeiral view with marked routers, bottom right: Jackal UGV camera feed, top right: sensor data)`
 }
 
 const root = document.getElementById("results-carousel")
@@ -702,7 +699,6 @@ paths/
     </div>
 </section>
 <!--End BibTex citation -->
-
 
   <footer class="footer">
   <div class="container">
