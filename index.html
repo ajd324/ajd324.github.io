@@ -625,6 +625,13 @@ if (items.length > 0) show(0)
 <!--End paper poster -->
 
 <!-- Equipment and Data Collection -->
+<style>
+.content, .content p, .content li {overflow-wrap: anywhere; word-break: break-word;}
+code {white-space: normal;}
+.pre-scroll {overflow-x: auto; -webkit-overflow-scrolling: touch;}
+.pre-scroll pre {min-width: 600px;}
+</style>
+
 <section class="section hero is-light">
   <div class="container">
     <div class="columns is-centered has-text-centered">
@@ -647,9 +654,8 @@ if (items.length > 0) show(0)
           </p>
 
           <h3 class="title is-4">Dataset Folder Structure</h3>
-          <div style="overflow-x:auto;">
-            <pre><code>
-paths/
+          <div class="pre-scroll">
+            <pre><code>paths/
 ├── path_6_1/
 │   ├── log.json
 │   ├── raw_log.json
@@ -663,8 +669,7 @@ paths/
 │       └── depth_[timestamp].npy   (original 16‑bit)
 ├── path_6_2/
 │   └── ...
-└── ...
-            </code></pre>
+└── ...</code></pre>
           </div>
 
           <ul>
@@ -677,9 +682,8 @@ paths/
           </ul>
 
           <h3 class="title is-4">Sample log.json Entry</h3>
-          <div style="overflow-x:auto;">
-            <pre><code>
-{
+          <div class="pre-scroll">
+            <pre><code>{
   "1727015642.8707535": {
     "action": "start",
     "rgb_img": "rgb_imgs/rgb_1727015642.8707535.png",
@@ -700,15 +704,14 @@ paths/
     }
   },
   ...
-}
-            </code></pre>
+}</code></pre>
           </div>
+
         </div>
       </div>
     </div>
   </div>
 </section>
-
 <!-- End Equipment and Data Collection -->
 
 <!--BibTex citation -->
