@@ -625,19 +625,10 @@ if (items.length > 0) show(0)
 <!--End paper poster -->
 
 <!-- Equipment and Data Collection -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<style>
-html, body {overflow-x: hidden;}
-.content p, .content li, .content ul, .content ol {overflow-wrap: anywhere; word-break: break-word;}
-.content pre {max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; white-space: pre; display: block;}
-.content pre code {white-space: inherit;}
-</style>
-
 <section class="section hero is-light">
-  <div class="container">
+  <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-12-mobile is-10-tablet is-8-desktop">
+      <div class="column is-four-fifths">
         <h2 class="title is-3">Equipment and Data Collection</h2>
         <div class="content has-text-justified">
 
@@ -656,7 +647,8 @@ html, body {overflow-x: hidden;}
           </p>
 
           <h3 class="title is-4">Dataset Folder Structure</h3>
-          <pre><code>paths/
+          <pre>
+paths/
 ├── path_6_1/
 │   ├── log.json
 │   ├── raw_log.json
@@ -670,7 +662,8 @@ html, body {overflow-x: hidden;}
 │       └── depth_[timestamp].npy   (original 16‑bit)
 ├── path_6_2/
 │   └── ...
-└── ...</code></pre>
+└── ...
+          </pre>
 
           <ul>
             <li><code>log.json</code>/<code>raw_log.json</code>: Dictionary of dictionaries; <code>raw_log.json</code> is the original file, <code>log.json</code> has some slight post-processing (filling in missing GPS/FTM data).</li>
@@ -682,7 +675,8 @@ html, body {overflow-x: hidden;}
           </ul>
 
           <h3 class="title is-4">Sample log.json Entry</h3>
-          <pre><code>{
+          <pre>
+{
   "1727015642.8707535": {
     "action": "start",
     "rgb_img": "rgb_imgs/rgb_1727015642.8707535.png",
@@ -703,7 +697,8 @@ html, body {overflow-x: hidden;}
     }
   },
   ...
-}</code></pre>
+}
+          </pre>
 
         </div>
       </div>
