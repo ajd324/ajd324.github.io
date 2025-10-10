@@ -625,22 +625,13 @@ if (items.length > 0) show(0)
 <!--End paper poster -->
 
 <!-- Equipment and Data Collection -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
-.content, .content p, .content li, .content ul, .content ol {
-  overflow-wrap: anywhere;
-  word-break: break-word;
-}
-.content pre,
-.content code {
-  overflow-wrap: normal;
-  word-break: normal;
-}
-.content pre {
-  max-width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  white-space: pre;
-}
+html, body {overflow-x: hidden;}
+.content p, .content li, .content ul, .content ol {overflow-wrap: anywhere; word-break: break-word;}
+.content pre {max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; white-space: pre; display: block;}
+.content pre code {white-space: inherit;}
 </style>
 
 <section class="section hero is-light">
