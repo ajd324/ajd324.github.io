@@ -626,9 +626,9 @@ if (items.length > 0) show(0)
 
 <!-- Equipment and Data Collection -->
 <section class="section hero is-light">
-  <div class="container is-max-desktop">
+  <div class="container">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+      <div class="column is-12-mobile is-10-tablet is-8-desktop">
         <h2 class="title is-3">Equipment and Data Collection</h2>
         <div class="content has-text-justified">
 
@@ -647,7 +647,8 @@ if (items.length > 0) show(0)
           </p>
 
           <h3 class="title is-4">Dataset Folder Structure</h3>
-          <pre>
+          <div style="overflow-x:auto;">
+            <pre><code>
 paths/
 ├── path_6_1/
 │   ├── log.json
@@ -663,7 +664,8 @@ paths/
 ├── path_6_2/
 │   └── ...
 └── ...
-          </pre>
+            </code></pre>
+          </div>
 
           <ul>
             <li><code>log.json</code>/<code>raw_log.json</code>: Dictionary of dictionaries; <code>raw_log.json</code> is the original file, <code>log.json</code> has some slight post-processing (filling in missing GPS/FTM data).</li>
@@ -675,7 +677,8 @@ paths/
           </ul>
 
           <h3 class="title is-4">Sample log.json Entry</h3>
-          <pre>
+          <div style="overflow-x:auto;">
+            <pre><code>
 {
   "1727015642.8707535": {
     "action": "start",
@@ -698,13 +701,14 @@ paths/
   },
   ...
 }
-          </pre>
-
+            </code></pre>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
 <!-- End Equipment and Data Collection -->
 
 <!--BibTex citation -->
