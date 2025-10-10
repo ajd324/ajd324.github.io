@@ -626,10 +626,21 @@ if (items.length > 0) show(0)
 
 <!-- Equipment and Data Collection -->
 <style>
-.content, .content p, .content li {overflow-wrap: anywhere; word-break: break-word;}
-code {white-space: normal;}
-.pre-scroll {overflow-x: auto; -webkit-overflow-scrolling: touch;}
-.pre-scroll pre {min-width: 600px;}
+.content, .content p, .content li, .content ul, .content ol {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+.content pre,
+.content code {
+  overflow-wrap: normal;
+  word-break: normal;
+}
+.content pre {
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  white-space: pre;
+}
 </style>
 
 <section class="section hero is-light">
@@ -654,8 +665,7 @@ code {white-space: normal;}
           </p>
 
           <h3 class="title is-4">Dataset Folder Structure</h3>
-          <div class="pre-scroll">
-            <pre><code>paths/
+          <pre><code>paths/
 ├── path_6_1/
 │   ├── log.json
 │   ├── raw_log.json
@@ -670,7 +680,6 @@ code {white-space: normal;}
 ├── path_6_2/
 │   └── ...
 └── ...</code></pre>
-          </div>
 
           <ul>
             <li><code>log.json</code>/<code>raw_log.json</code>: Dictionary of dictionaries; <code>raw_log.json</code> is the original file, <code>log.json</code> has some slight post-processing (filling in missing GPS/FTM data).</li>
@@ -682,8 +691,7 @@ code {white-space: normal;}
           </ul>
 
           <h3 class="title is-4">Sample log.json Entry</h3>
-          <div class="pre-scroll">
-            <pre><code>{
+          <pre><code>{
   "1727015642.8707535": {
     "action": "start",
     "rgb_img": "rgb_imgs/rgb_1727015642.8707535.png",
@@ -705,7 +713,6 @@ code {white-space: normal;}
   },
   ...
 }</code></pre>
-          </div>
 
         </div>
       </div>
