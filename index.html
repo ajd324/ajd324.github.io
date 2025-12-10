@@ -41,7 +41,7 @@
   <!-- TODO: Same as paper title above -->
   <meta name="x:title" content="YOPO-Nav: Visual Navigation using 3DGS Graphs from One-Pass Videos">
   <!-- TODO: Same as description above -->
-  <meta name="x:description" content="YOPO-Campus  is a visual navigation dataset collected on the Busch Campus of Rutgers University in New Jersey, United States during the Summer and Fall of 2024 and 2025. It supports the development and evaluation of deep learning–based models for navigation and visual place recognition, particularly those fusing Wi‑Fi and visual data.">
+  <meta name="x:description" content="YOPO-Campus is a visual navigation dataset collected on the Busch Campus of Rutgers University in New Jersey, United States during the Summer and Fall of 2024 and 2025. It supports the development and evaluation of deep learning–based models for navigation and visual place recognition, particularly those fusing Wi‑Fi and visual data.">
   <!-- TODO: Same as social preview image above -->
   <meta name="x:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
   <meta name="x:image:alt" content="YOPO-Nav: Visual Navigation using 3DGS Graphs from One-Pass Videos">
@@ -70,7 +70,7 @@
   <link rel="preconnect" href="https://documentcloud.adobe.com">
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
-  <title>Reality Aware Networks YOPO-Campus</title>
+  <title>YOPO-Campus Dataset</title>
   
   <!-- Favicon and App Icons -->
   <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
@@ -110,35 +110,59 @@
   {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "headline": "YOPO-Nav: Visual Navigation using 3DGS Graphs from One-Pass Videos",
+    "description": "YOPO-Campus is a visual navigation dataset collected on the Busch Campus of Rutgers University in New Jersey, United States during the Summer and Fall of 2024 and 2025. It supports the development and evaluation of deep learning–based models for navigation and visual place recognition, particularly those fusing Wi‑Fi and visual data.",
     "author": [
       {
         "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
+        "name": "Ryan Meegan",
         "affiliation": {
           "@type": "Organization",
-          "name": "INSTITUTION_NAME"
+          "name": "Rutgers University"
         }
       },
       {
         "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
+        "name": "Adam D'Souza",
         "affiliation": {
           "@type": "Organization",
-          "name": "INSTITUTION_NAME"
+          "name": "Rutgers University"
         }
-      }
+      },
+      {
+        "@type": "Person",
+        "name": "Bryan Bo Cao",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Stony Brook University"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Shubham Jain",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Stony Brook University"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Kristin Dana",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Rutgers University"
+        }
+      },
     ],
-    "datePublished": "2024-01-01",
+    "datePublished": "2025-11-21",
     "publisher": {
       "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
+      "name": "CVPR26"
     },
     "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
     "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
+    "keywords": ["visual navigation", "KEYWORD3", "computer vision", "robotics"],
+    "abstract": "Visual navigation has emerged as a practical alternative to traditional robotic navigation pipelines that rely on detailed mapping and path planning. However, constructing and maintaining 3D maps is often computationally expensive and memory-intensive. We address the problem of visual navigation when exploration videos of a large environment are available. The videos serve as a visual reference, allowing a robot to retrace the explored trajectories without relying on metric maps. Our proposed method, YOPO-Nav (You Only Pass Once), encodes an environment into a compact spatial representation composed of interconnected local 3D Gaussian Splatting (3DGS) models. During navigation, the framework aligns the robot’s current visual observation with this representation and predicts actions that guide it back toward the demonstrated trajectory. YOPO-Nav employs a hierarchical design: a visual place recognition (VPR) module provides coarse localization, while the local 3DGS models refine the goal and intermediate poses to generate control actions. To evaluate our approach, we introduce the YOPO-Campus dataset, comprising 4 hours of egocentric video and robot controller inputs from over 6 km of human-teleoperated robot trajectories. We benchmark recent visual navigation methods on trajectories from YOPO-Campus using a Clearpath Jackal robot. Experimental results show YOPO-Nav provides excellent performance in image-goal navigation for real-world scenes on a physical robot. The dataset and code will be made publicly available for visual navigation and scene representation research.",
     "citation": "BIBTEX_CITATION_HERE",
     "isAccessibleForFree": true,
     "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -164,7 +188,7 @@
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
+    "name": "Rutgers University Robotics and Computer Vision Lab",
     "url": "https://YOUR_INSTITUTION_WEBSITE.com",
     "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
     "sameAs": [
@@ -199,7 +223,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Reality Aware Networks (RAN): YOPO-Campus Dataset</h1>
+            <h1 class="title is-1 publication-title">YOPO-Campus Dataset</h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
                 <a href="https://github.com/RNGmeg" target="_blank">Ryan Meegan</a><sup></sup>,</span>
@@ -292,7 +316,7 @@
 
       <!-- Teaser description -->
       <h2 class="subtitle has-text-centered">
-        In YOPO-Campis, Busch Campus at Rutgers University was divided into 25 trajectories. A Clearpath Jackal UGV was teleoperated along these trajectories in both directions, collecting imagery, orientation, GPS, and Wi‑Fi RSSI and FTM data.
+        In YOPO-Campus, Busch Campus at Rutgers University was divided into 25 trajectories. A Clearpath Jackal UGV was teleoperated along these trajectories in both directions, collecting imagery, orientation, GPS, and Wi‑Fi RSSI and FTM data.
       </h2>
     </div>
   </div>
@@ -696,9 +720,9 @@ paths/
           <span class="copy-text">Copy</span>
         </button>
       </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2026,
-  title={Your Paper Title Here},
-  author={Ryan Meegan, Adam D'Souza, Kristin Dana},
+      <pre id="bibtex-code"><code>@article{meegan2026yopo,
+  title={YOPO-Nav: Visual Navigation using 3DGS Graphs from One-Pass Videos},
+  author={Ryan Meegan, Adam D'Souza, Bryan Bo Cao, Shubham Jain, Kristin Dana},
   journal={CVPR},
   year={2026},
   url={https://your-domain.com/your-project-page}
